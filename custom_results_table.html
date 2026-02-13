@@ -1,0 +1,69 @@
+
+<style>
+    table {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    .threshold {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>Logit</th>
+      <th>Logit - With Controls</th>
+      <th>AIPW - Before Trim</th>
+      <th>AIPW - After Trim</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Movement Fastball</th>
+      <td>-0.003 (0.002)</td>
+      <td>0.003 (0.002)</td>
+      <td>0.0022 (0.0026)</td>
+      <td>0.0001 (0.0012)</td>
+    </tr>
+    <tr>
+      <th>Fastball</th>
+      <td>-0.012*** (0.002)</td>
+      <td>-0.023*** (0.002)</td>
+      <td>-0.0228*** (0.001)</td>
+      <td>-0.024*** (0.0012)</td>
+    </tr>
+    <tr>
+      <th>Breaking Ball</th>
+      <td>0.016*** (0.002)</td>
+      <td>0.02*** (0.002)</td>
+      <td>0.0192*** (0.0018)</td>
+      <td>0.0182*** (0.0013)</td>
+    </tr>
+    <tr>
+      <th>Offspeed</th>
+      <td>0.007** (0.003)</td>
+      <td>0.01*** (0.003)</td>
+      <td>-0.0095*** (0.0015)</td>
+      <td>0.004** (0.0017)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="threshold">
+    <p>Threshold for Statistical Significance:</p>
+    <ul>
+        <li>*** p < 0.01</li>
+        <li>** p < 0.05</li>
+        <li>* p < 0.1</li>
+    </ul>
+</div>
